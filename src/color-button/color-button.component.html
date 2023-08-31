@@ -1,0 +1,7 @@
+<div *ngFor="let content of contents">
+  <h4>{{content.title}}</h4>
+  <p>{{content.body}}</p>
+  <button class="button" (click)="changeTitle(content.color)" [ngStyle]="{backgroundColor : content.color}">
+    Set {{content.color}}
+  </button>
+</div>
